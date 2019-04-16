@@ -1,0 +1,17 @@
+<div>
+<table>
+  <th><input #diceRolled (keyup.enter)="generateDieRolls(diceRolled.value)" ></th>
+  <th>
+      <select>
+        <option value="4">d4</option>
+        <option value="6">d6</option>
+        <option value="8">d8</option>
+        <option value="10">d10</option>
+        <option value="20">d20</option>
+        <option value="100">d100</option>
+      </select>
+    </th>
+  <th><button (click)="generateDieRolls(diceRolled.value)">Roll</button></th>
+  <tr>{{total}}</tr>
+</table>
+</div>
